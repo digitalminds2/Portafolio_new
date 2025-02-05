@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portafolio EBS NORTE 3</title>
+  
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="godocs-bulma" />
+  
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- plugins -->
+  <link rel="stylesheet" href="plugins/bulma/bulma.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+   <nav class="navbar is-sticky-top navigation" role="navigation" aria-label="main navigation" style="box-shadow: none; background-color: transparent;">
+      <div class="container">
+         <div class="navbar-brand">
+            <a class="navbar-item" href="#" onclick="scrollToTop()" style="font-size: 2rem; font-weight: bold; color: #007bff; letter-spacing: 1px; transition: color 0.3s ease;">
+               AKAMY
+            </a>
+            <script>
+               function scrollToTop() {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+               }
+            </script>
+            
+            <a role="button" class="navbar-burger burger" aria-expanded="false" data-target="navbar-links">
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+            </a>
+         </div>
+      
+         <div id="navbar-links" class="navbar-menu">
+            <div class="navbar-start ml-auto">
+               <a class="navbar-item" href="#mision-vision" style="font-size: 1rem; font-weight: 500; color: #333; transition: color 0.3s ease;">Nuestra misión</a>
+               <a class="navbar-item" href="#differentiation" style="font-size: 1rem; font-weight: 500; color: #333; transition: color 0.3s ease;">¿Qué nos diferencia?</a>
+               <a class="navbar-item" href="#nuestros-servicios" style="font-size: 1rem; font-weight: 500; color: #333; transition: color 0.3s ease;">Nuestros servicios</a>
+            </div>
+      
+            <div class="navbar-end ml-0">
+               <div class="navbar-item py-0">
+                  <a href="contact.html" class="btn btn-sm btn-primary ml-4" style="border-radius: 25px; background-color: #007bff; color: #fff; padding: 8px 25px; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; transition: background-color 0.3s ease;">
+                     Contacto
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   
+   <!-- Estilos CSS -->
+   <style>
+      /* Estilo de la barra de navegación */
+      .navbar {
+         background-color: transparent; /* Fondo transparente para evitar la línea */
+         box-shadow: none; /* Quitar sombra */
+         padding: 15px 0;
+         transition: background-color 0.3s ease;
+      }
+   
+      /* Efecto de color al pasar el mouse sobre los enlaces */
+      .navbar-item:hover {
+         color: #007bff !important;
+         transform: scale(1.05);
+      }
+   
+      /* Efecto para el botón de contacto */
+      .btn:hover {
+         background-color: #0056b3;
+         transform: translateY(-2px);
+      }
+   
+      /* Estilos del burger icon */
+      .navbar-burger {
+         color: #007bff;
+         transition: color 0.3s ease;
+      }
+   
+      .navbar-burger:hover {
+         color: #0056b3;
+      }
+   
+      /* Animación suave de la barra al hacer scroll */
+      .navbar.is-sticky-top {
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         z-index: 10;
+         transition: background-color 0.3s ease;
+      }
+   
+      /* Cambiar el color de fondo de la barra cuando se hace scroll */
+      .navbar.is-sticky-top.scrolled {
+         background-color: rgba(255, 255, 255, 0.9); /* Ligera transparencia al hacer scroll */
+      }
+   
+      /* Ajustes responsivos */
+      @media (max-width: 768px) {
+         .navbar-item {
+            font-size: 1.2rem;
+         }
+         .navbar-burger {
+            color: #333;
+         }
+      }
+   </style>
+   
+   <!-- Script para detectar el scroll -->
+   <script>
+      window.addEventListener('scroll', function () {
+         const navbar = document.querySelector('.navbar');
+         if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+         } else {
+            navbar.classList.remove('scrolled');
+         }
+      });
+   </script>
+   
+
+<!-- banner -->
+<section class="section pb-0">
+   <div class="container">
+      <div class="columns is-justify-content-space-between is-align-items-center">
+         <div class="column is-7-desktop has-text-centered-mobile has-text-centered-tablet has-text-left-desktop">
+            <h1 class="mb-4">NUESTRO EQUIPO DE TRABAJO</h1>
+            <p class="mb-4" style="text-align: justify;">Somos un equipo de profesionales con amplia experiencia en el sector salud, respaldados por una sólida trayectoria en la implementación y gestión de programas estratégicos como los Equipos Básicos de Salud y el Plan de Intervenciones Colectivas. Estos programas están alineados con la nueva apuesta del Ministerio de Salud de Colombia: la Atención Primaria en Salud (APS), enfocada en garantizar el acceso equitativo, integral y continuo a los servicios de salud. Nuestro trabajo abarca desde la planeación estratégica hasta la ejecución efectiva, asegurando un impacto positivo y sostenible en las comunidades que atendemos.</p>
+        </div>                      
+        <div class="column is-4-desktop">
+         <img src="images/getting-started.jpg" alt="illustration" class="img-fluid" style="width: 150%; max-width: 100%; height: auto;">
+      </div>
+           
+      </div>
+   </div>
+</section>
+<!-- /banner -->
+
+<!-- Sección Conócenos -->
+<section class="section pb-0">
+   <div class="container">
+       <h2 class="section-title has-text-centered">Conócenos</h2>
+
+       <div class="columns is-multiline is-centered">
+           <!-- Primera fila (3 profesionales) -->
+           <div class="column is-4-widescreen is-4-desktop is-6-tablet">
+               <div class="card match-height" style="min-height: 350px; padding: 20px;">
+                   <div class="card-body has-text-centered">
+                       <img src="images/profesional1.jpg" alt="Profesional 1" 
+                           style="border-radius: 50%; width: 160px; height: 160px; object-fit: cover; border: 3px solid #ddd; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                       <h3 class="card-title h4 mt-3">Angela Cruz Bohórquez</h3>
+                       <p class="subtitle">Fonoaudióloga</p>
+                       <p class="card-text">Con amplia experiencia en la coordinación de programas de salud pública a nivel municipal y departamental...</p>
+                   </div>
+               </div>
+           </div>
+
+           <div class="column is-4-widescreen is-4-desktop is-6-tablet">
+               <div class="card match-height" style="min-height: 350px; padding: 20px;">
+                   <div class="card-body has-text-centered">
+                       <img src="images/profesional2.jpg" alt="Profesional 2"
+                           style="border-radius: 50%; width: 160px; height: 160px; object-fit: cover; border: 3px solid #ddd; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                       <h3 class="card-title h4 mt-3">Andrea Gómez</h3>
+                       <p class="subtitle">Administradora de Empresas</p>
+                       <p class="card-text">Profesional con una sólida formación en administración de empresas y una amplia experiencia en la gestión de facturación en hospitales públicos...</p>
+                   </div>
+               </div>
+           </div>
+
+           <div class="column is-4-widescreen is-4-desktop is-6-tablet">
+               <div class="card match-height" style="min-height: 350px; padding: 20px;">
+                   <div class="card-body has-text-centered">
+                       <img src="images/profesional3.jpg" alt="Profesional 3"
+                           style="border-radius: 50%; width: 160px; height: 160px; object-fit: cover; border: 3px solid #ddd; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                       <h3 class="card-title h4 mt-3">Yuli Alexandra Larrahondo</h3>
+                       <p class="subtitle">Abogada</p>
+                       <p class="card-text">Abogada con una vasta experiencia en la gestión y supervisión de procesos de contratación en entidades públicas...</p>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Segunda fila (2 profesionales centrados) -->
+           <div class="column is-4-widescreen is-4-desktop is-6-tablet is-offset-2-desktop">
+               <div class="card match-height" style="min-height: 350px; padding: 20px;">
+                   <div class="card-body has-text-centered">
+                       <img src="images/kenner.jpg" alt="Profesional 4"
+                           style="border-radius: 50%; width: 160px; height: 160px; object-fit: cover; border: 3px solid #ddd; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                       <h3 class="card-title h4 mt-3">Kenner Jesus Gómez</h3>
+                       <p class="subtitle">Ingeniero de Sistemas</p>
+                       <p class="card-text">Desarrollador Full Stack con un profundo conocimiento en arquitecturas de software, tanto monolítica como de microservicios...</p>
+                   </div>
+               </div>
+           </div>
+
+           <div class="column is-4-widescreen is-4-desktop is-6-tablet">
+               <div class="card match-height" style="min-height: 350px; padding: 20px;">
+                   <div class="card-body has-text-centered">
+                       <img src="images/miguel.jpg" alt="Profesional 5"
+                           style="border-radius: 50%; width: 160px; height: 160px; object-fit: cover; border: 3px solid #ddd; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                       <h3 class="card-title h4 mt-3">Miguel Ángel Caycedo</h3>
+                       <p class="subtitle">Analista de datos</p>
+                       <p class="card-text">Especialista en Inteligencia Artificial Aplicada a la Salud Pública, Con experiencia en la implementación de inteligencia artificial en salud...</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+<style>
+   /* Estilo general para las tarjetas de profesionales */
+   .card {
+       border-radius: 10px; /* Bordes redondeados más suaves */
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+       transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+       background-color: #fff;
+       padding: 30px;
+   }
+
+   /* Efecto al pasar el mouse por encima de la tarjeta */
+   .card:hover {
+       transform: translateY(-10px); /* Eleva la tarjeta */
+       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+   }
+
+   /* Estilos para los encabezados y el texto */
+   .section-title {
+       font-family: 'Montserrat', sans-serif;
+       font-weight: bold;
+       font-size: 36px;
+       color: #333;
+       margin-bottom: 40px;
+       text-transform: uppercase;
+       text-align: center;
+   }
+
+   .card-title {
+       font-family: 'Roboto', sans-serif;
+       font-size: 20px;
+       color: #333;
+       font-weight: 600;
+   }
+
+   /* Efecto de hover sobre el nombre del profesional */
+   .card-title:hover {
+       color: #007bff; /* Cambia el color al pasar el mouse */
+       cursor: pointer;
+   }
+
+   /* Estilo para las imágenes de los profesionales */
+   .card-body img {
+       border-radius: 50%;
+       width: 160px;
+       height: 160px;
+       object-fit: cover;
+       border: 3px solid #ddd;
+       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+       transition: transform 0.3s ease;
+   }
+
+   /* Efecto al pasar el mouse por encima de la imagen */
+   .card-body img:hover {
+       transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+   }
+
+   /* Ajustes para dispositivos pequeños */
+   @media (max-width: 768px) {
+       .section-title {
+           font-size: 30px;
+       }
+
+       .card {
+           padding: 15px;
+       }
+
+       .card-body img {
+           width: 140px;
+           height: 140px;
+       }
+   }
+</style>
+<!-- Sección Misión y Visión -->
+<section id="mision-vision" class="section pb-0">
+   <div class="container">
+      <h2 class="section-title has-text-centered">Nuestra Misión y Visión</h2>
+
+      <div class="columns is-multiline is-centered">
+         <!-- Misión -->
+         <div class="column is-5">
+            <div class="card has-background-light has-text-justified" style="padding: 30px; border-radius: 15px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+               <h3 class="card-title has-text-centered has-text-primary">Misión</h3>
+               <p class="card-text">
+                  Ser líderes en consultoría para el sector salud en Colombia, reconocidos por nuestra capacidad de transformar sistemas de atención primaria, impulsar la innovación tecnológica y desarrollar estrategias sostenibles que garanticen el bienestar de las comunidades y el éxito de las instituciones.
+               </p>
+            </div>
+         </div>
+
+         <!-- Visión -->
+         <div class="column is-5">
+            <div class="card has-background-light has-text-justified" style="padding: 30px; border-radius: 15px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+               <h3 class="card-title has-text-centered has-text-primary">Visión</h3>
+               <p class="card-text">
+                  Brindar soluciones integrales en salud y consultoría estratégica, orientadas a optimizar la atención primaria y fortalecer la gestión de las instituciones mediante innovación, capacitación y cumplimiento normativo.
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Sección ¿Qué nos diferencia? -->
+<section id="differentiation" class="section">
+   <div class="container">
+      <h2 class="section-title has-text-centered">¿Qué nos diferencia?</h2>
+
+      <div class="columns is-multiline is-centered">
+         <!-- Innovación tecnológica -->
+         <div class="column is-4">
+            <div class="card differentiation-card">
+               <h3 class="card-title">🚀 Enfoque Local y Cultural</h3>
+               <p>
+                  Adaptamos los proyectos de consultoría a las características socioeconómicas y culturales específicas de las comunidades.
+               </p>
+            </div>
+         </div>
+
+         <!-- Enfoque centrado en el usuario -->
+         <div class="column is-4">
+            <div class="card differentiation-card">
+               <h3 class="card-title">👥 Acompañamiento Continuo y Formación Práctica</h3>
+               <p>
+                  No solo implementamos estrategias, sino que ofrecen capacitaciones prácticas para equipos de salud, administrativos y directivos, garantizando que las instituciones puedan operar con autonomía en el futuro
+               </p>
+            </div>
+         </div>
+
+         <!-- Compromiso con la calidad -->
+         <div class="column is-4">
+            <div class="card differentiation-card">
+               <h3 class="card-title">✅ Integración de Tecnología Avanzada </h3>
+               <p>
+                  Incorporamos herramientas tecnológicas l en procesos clave, como auditorías de historias clínicas y facturación, análisis de indicadores y generación de reportes
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Estilos CSS integrados -->
+<style>
+   /* Scroll suave al hacer clic en el enlace */
+   html {
+      scroll-behavior: smooth;
+   }
+
+   #differentiation {
+      padding: 80px 0;
+      background: linear-gradient(to right, #ffffff, #f7f7f7);
+   }
+
+   .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 40px;
+   }
+
+   .differentiation-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+
+   .differentiation-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+   }
+
+   .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 15px;
+   }
+
+   .differentiation-card p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+   }
+</style>
+<!-- Razones para Elegirnos (dentro de "¿Qué nos diferencia?") -->
+<div class="container">
+   <h2 class="section-title has-text-centered">Razones para elegirnos</h2>
+
+   <div class="columns is-multiline is-centered">
+      <!-- Experiencia y Confiabilidad -->
+      <div class="column is-4">
+         <div class="card reasons-card">
+            <p>
+               Diseñamos estrategias basadas en las necesidades locales de cada comunidad, garantizando que nuestros servicios estén alineados con la realidad territorial, cultural y social de cada población
+            </p>
+         </div>
+      </div>
+
+      <!-- Innovación Continua -->
+      <div class="column is-4">
+         <div class="card reasons-card">
+            <p>
+               Contamos con profesionales altamente capacitados en salud pública, planeación estratégica, auditorías en facturación, tecnología e innovación, así como expertos en normatividad jurídica del sector salud.
+            </p>
+         </div>
+      </div>
+
+      <!-- Soporte Personalizado -->
+      <div class="column is-4">
+         <div class="card reasons-card">
+            <p>
+               Ayudamos a las instituciones a reducir costos, optimizar recursos, mejorar la atención al paciente y aumentar la eficiencia operativa.
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- Estilos CSS integrados -->
+<style>
+   .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 40px;
+   }
+
+   .reasons-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease-out;
+   }
+
+   .reasons-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+   }
+
+   .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 15px;
+   }
+
+   .reasons-card p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+   }
+
+   /* Animación de entrada */
+   @keyframes fadeInUp {
+      from {
+         opacity: 0;
+         transform: translateY(30px);
+      }
+      to {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+</style>
+<!-- Sección Nuestros Servicios -->
+<section id="nuestros-servicios" class="section">
+   <div class="container">
+      <h2 class="section-title has-text-centered">Nuestros Servicios</h2>
+
+      <div class="columns is-multiline is-centered">
+         <!-- Servicio 1 -->
+         <div class="column is-4">
+            <div class="card service-card">
+               <h3 class="card-title"> 📊Planeación Estratégica y Organización</h3>
+               <ul class="service-list">
+                  <li>Diseño e implementación de estrategias APS: Ayudar a estructurar modelos operativos para EBS y PIC, basados en las necesidades locales.
+                  </li>
+                  <li>Organización de rutas integrales de atención: Asesorar en la creación de rutas efectivas para la atención primaria y la articulación con niveles de atención especializados.
+                  </li>
+                  <li>Fortalecimiento de equipos básicos de salud: Capacitación y acompañamiento para mejorar el desempeño y la coordinación dentro de los EBS.
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Servicio 2 -->
+         <div class="column is-4">
+            <div class="card service-card">
+               <h3 class="card-title"> 💡Auditorías en Facturación e Historias Clínicas</h3>
+               <ul class="service-list">
+                  <li>Revisar la facturación generada por los servicios prestados para identificar errores en códigos, glosas frecuentes o inconsistencias en tarifas.
+                  </li>
+                  <li>Entrenar al personal en la correcta aplicación de manuales tarifarios (SOAT, ISS, RIPS, etc.) y estándares específicos del sector salud en Colombia.</li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Servicio 3 -->
+         <div class="column is-4">
+            <div class="card service-card">
+               <h3 class="card-title">🎓Capacitación y Desarrollo del Talento Humano</h3>
+               <ul class="service-list">
+                  <li>Formación en APS: Capacitar a equipos de salud en principios, estrategias y prácticas de APS, incluyendo enfoque diferencial.
+                  </li>
+                  <li>Desarrollo de habilidades en intervención comunitaria: Entrenar a equipos en comunicación efectiva, promoción de la salud y manejo de determinantes sociales.
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Servicio 4 -->
+         <div class="column is-4">
+            <div class="card service-card">
+               <h3 class="card-title">🏢Organización</h3>
+               <ul class="service-list">
+                  <li>Asesorar en estrategias de reclutamiento, capacitación continua y retención del talento humano.
+                  </li>
+                  <li>Diseñar estructuras de trabajo que definan roles y funciones claras en los EBS, promoviendo la interdisciplinariedad.
+                  </li>
+                  <li>Asistir en la descomposición de los objetivos estratégicos en actividades específicas con cronogramas claros y responsables asignados.
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Servicio 5 -->
+         <div class="column is-4">
+            <div class="card service-card">
+               <h3 class="card-title">⚙️Automatización de Procesos y Monitoreo de Indicadores </h3>
+               <ul class="service-list">
+                  <li>Automatización de procesos: Diseñar flujos de trabajo más eficientes para registrar consultas, caracterizar poblaciones y generar reportes para PIC.
+                  </li>
+                  <li>Análisis de datos poblacionales: Creación de dashboards interactivos que integren datos socioeconómicos, geográficos y de salud para la toma de decisiones.
+                  </li>
+                  <li>Gestión de herramientas: Automatización de instrumentos  para priorizar intervenciones.
+                  </li>
+                  <li>Capacitación en tecnologías de información en salud: Entrenar en el uso de herramientas como SISPRO, RIPS y registros comunitarios.
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Servicio 6 -->
+         <div class="column is-4">
+            <div class="card service-card">
+               <h3 class="card-title"> Consultoría en Finanzas en Salud</h3>
+               <ul class="service-list">
+                  <li>Gestión de recursos para APS: Diseñar estrategias para maximizar el uso de los recursos asignados al PIC y buscar nuevas fuentes de financiación.
+                  </li>
+                  <li>Capacitación en gestión presupuestaria: Entrenar a equipos en la planeación y seguimiento del presupuesto del sector salud.
+                  </li>
+                  <li>Análisis de costo-efectividad: Evaluar el impacto económico de las intervenciones para priorizar las más rentables y sostenibles.
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Estilos CSS integrados -->
+<style>
+   .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 40px;
+   }
+
+   .service-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease-out;
+   }
+
+   .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+   }
+
+   .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 15px;
+   }
+
+   .service-list {
+      list-style: none;
+      padding-left: 0;
+   }
+
+   .service-list li {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      padding-left: 25px;
+      position: relative;
+   }
+
+   .service-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #28a745;
+      font-weight: bold;
+   }
+
+   /* Animación de entrada */
+   @keyframes fadeInUp {
+      from {
+         opacity: 0;
+         transform: translateY(30px);
+      }
+      to {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+</style>
+
+<!-- Sección Beneficios -->
+<section class="section">
+   <div class="container">
+      <h2 class="section-title has-text-centered">Beneficios</h2>
+
+      <!-- Contenedor del carrusel horizontal -->
+      <div class="slider-container">
+         <!-- Carrusel de beneficios -->
+         <div class="slider" id="beneficios">
+            <!-- Beneficio 1 -->
+            <div class="slider-item">
+               <div class="card has-background-light" style="padding: 30px; border-radius: 15px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                  <h3 class="card-title has-text-centered">✔ Empoderamiento del talento humano</h3>
+                  <p>Los equipos estarán mejor preparados para manejar determinantes sociales y responder a las necesidades de sus comunidades</p>
+               </div>
+            </div>
+
+            <!-- Beneficio 2 -->
+            <div class="slider-item">
+               <div class="card has-background-light" style="padding: 30px; border-radius: 15px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                  <h3 class="card-title has-text-centered">✔ Cumplimiento normativo</h3>
+                  <p>Las instituciones estaran mejor preraradas para  cumplir con los requisitos legales y regulatorios del sector salud en Colombia,</p>
+               </div>
+            </div>
+
+            <!-- Beneficio 3 -->
+            <div class="slider-item">
+               <div class="card has-background-light" style="padding: 30px; border-radius: 15px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                  <h3 class="card-title has-text-centered">✔ Fortalecimiento de la cohesión social</h3>
+                  <p>Las intervenciones comunitarias bien dirigidas ayudan a construir comunidades más resilientes y participativas.</p>
+               </div>
+            </div>
+
+            <!-- Beneficio 4 -->
+            <div class="slider-item">
+               <div class="card has-background-light" style="padding: 30px; border-radius: 15px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                  <h3 class="card-title has-text-centered">✔ Estandarización de procesos administrativo</h3>
+                  <p>Mejora en la consistencia en los procesos de facturación</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Flechas de navegación -->
+      <div class="has-text-centered" style="margin-top: 20px;">
+         <button id="prev" class="button is-link is-outlined">
+            ⬅️
+         </button>
+         <button id="next" class="button is-link is-outlined">
+            ➡️
+         </button>
+      </div>
+   </div>
+</section>
+<!-- Estilos CSS integrados -->
+<style>
+   .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 40px;
+   }
+
+   .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 15px;
+   }
+
+   .slider-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+   }
+
+   .slider {
+      display: flex;
+      transition: transform 0.5s ease;
+   }
+
+   .slider-item {
+      min-width: 300px; /* Ajusta el ancho de cada tarjeta */
+      margin-right: 20px;
+   }
+
+   .button.is-outlined {
+      font-size: 1.5rem;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+   }
+
+   .button.is-outlined:hover {
+      background-color: #007bff;
+      color: #fff;
+   }
+</style>
+
+<!-- Script para el slider -->
+<script>
+   const slider = document.getElementById('beneficios');
+   const prevButton = document.getElementById('prev');
+   const nextButton = document.getElementById('next');
+   
+   let currentIndex = 0;
+   const items = document.querySelectorAll('.slider-item');
+   const totalItems = items.length;
+
+   // Función para mover el slider a la izquierda
+   prevButton.addEventListener('click', () => {
+      if (currentIndex > 0) {
+         currentIndex--;
+         slider.style.transform = `translateX(-${currentIndex * (items[0].offsetWidth + 20)}px)`;
+      }
+   });
+
+   // Función para mover el slider a la derecha
+   nextButton.addEventListener('click', () => {
+      if (currentIndex < totalItems - 1) {
+         currentIndex++;
+         slider.style.transform = `translateX(-${currentIndex * (items[0].offsetWidth + 20)}px)`;
+      }
+   });
+</script>
+
+<section class="section" id="proyectos">
+   <div class="container">
+      <h2 class="section-title has-text-centered">Nuestros Proyectos</h2>
+
+      <div class="columns is-multiline is-centered">
+         <!-- Proyecto 1 (Desarrollo de software) -->
+         <div class="column is-6-widescreen is-6-desktop is-12-tablet">
+            <div class="card shadow-lg hover:scale-105 transition-transform">
+               <div class="card-body">
+                  <h3 class="card-title has-text-centered">Desarrollo de Software SGCD - Sistema de Gestión y Conversión de Datos</h3>
+                  <p class="card-text" style="text-align: justify;">
+                     Este proyecto fue desarrollado por nuestro equipo de ingenieros con el propósito de optimizar la gestión en salud pública a través de la automatización y el análisis inteligente de datos. Actualmente, el software está enfocado en fortalecer la operatividad de los Equipos Básicos de Salud, procesando la información de caracterización de manera eficiente. Su función principal es decodificar los datos recopilados, estructurarlos de forma legible, asignar automáticamente un curso de vida a cada persona y vincular cada registro con los lineamientos establecidos en la Resolución 3280 de 2018 del Ministerio de Salud. Además, el sistema identifica las actividades específicas que cada individuo requiere según su perfil y genera alertas personalizadas a nivel individual, familiar y comunitario. De esta manera, facilita la identificación temprana de necesidades en la población, permitiendo una intervención oportuna y eficaz.
+                  </p>                   
+                  <div class="has-text-centered">
+                     <p class="card-text"><strong>Ingenieros que trabajaron en este proyecto:</strong></p>
+                     <ul class="has-text-left">
+                        <li>Ing. Kenner Jesus Gómez</li>
+                        <li>Ing. Miguel Ángel Caycedo</li>  
+                     </ul>
+                  </div>
+                  <div class="has-text-centered">
+                     <h3 class="card-title has-text-centered">Empresas sociales del estado que trabajan con nosotros en dicho proyecto</h3>
+                     <ul class="has-text-left">
+                        <li>Empresa social del estado Norte 1 ESE</li>
+                        <li>Empresa social del estado Norte 2 ESE</li> 
+                        <li>Empresa social del estado Norte 3 ESE</li> 
+                        <li>Empresa social del estado Cxayucejxut</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Estilos CSS integrados -->
+<style>
+   .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+   }
+
+   .card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+
+   .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+   }
+
+   .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 15px;
+   }
+
+   .card-text {
+      font-size: 1rem;
+      color: #4a5568;
+      line-height: 1.6;
+   }
+
+   .button.is-outlined.is-primary {
+      font-size: 1.2rem;
+      padding: 10px 25px;
+      border-radius: 25px;
+      border: 2px solid #007bff;
+      color: #007bff;
+      transition: background-color 0.3s ease, color 0.3s ease;
+   }
+
+   .button.is-outlined.is-primary:hover {
+      background-color: #007bff;
+      color: #fff;
+   }
+
+   .has-text-left ul {
+      list-style-type: none;
+      padding-left: 0;
+      color: #333;
+   }
+
+   .has-text-left ul li {
+      margin-bottom: 8px;
+   }
+
+   .has-text-centered {
+      margin-top: 20px;
+   }
+
+   .mt-4 {
+      margin-top: 1.5rem;
+   }
+</style>
+<!-- Sección Ubicación Mejorada -->
+<section class="section" id="ubicacion">
+   <div class="container">
+      <div class="box location-box">
+         <h2 class="section-title has-text-centered">Nuestra Ubicación</h2>
+         <p class="has-text-centered location-text">
+            Estamos ubicados en <strong>Puerto Tejada, Cauca, Colombia</strong>. ¡Ven a visitarnos!
+         </p>
+
+         <!-- Mapa con estilo mejorado -->
+         <div class="map-container">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.198914497257!2d-76.11769848433253!3d3.116967342283887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e296cc466c115f5%3A0xd5bbcc6cc121b503!2sPuerto%20Tejada%2C%20Cauca!5e0!3m2!1ses!2sco!4v1675411122050!5m2!1ses!2sco"
+               allowfullscreen="" loading="lazy"></iframe>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Estilos CSS Modernos -->
+<style>
+   .location-box {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+   }
+
+   .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+   }
+
+   .location-text {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+   }
+
+   .map-container {
+      width: 100%;
+      height: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   }
+
+   .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+   }
+</style>
+
+
+
+<footer>
+   <div class="container">
+      <div class="columns is-multiline is-align-items-center border-bottom py-5">
+         <div class="column is-4-desktop is-12-tablet">
+            <ul class="list-inline footer-menu has-text-centered has-text-left-desktop">
+               <li class="list-inline-item"><a href="contact.html">Contacto</a></li>
+            </ul>
+         </div>
+         <div class="column is-4-desktop is-12-tablet">
+            <a class="navbar-brand is-justify-content-center" href="index.html">
+               <span class="has-text-weight-bold is-size-4">AKAMY</span>
+            </a>            
+         </div>
+         <div class="column is-4-desktop is-12-tablet">
+            <ul class="list-inline social-icons has-text-right-desktop has-text-centered">
+               <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="ti-github"></i></a></li>
+               <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="py-4 has-text-centered">
+         <small class="text-light">Copyright © 2025 - Design &amp; Developed by <a href="https://beacons.ai/digitalminds23">DigitalMinds23</a></small>
+      </div>
+   </div>
+</footer>
+
+<!-- plugins -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<script src="plugins/masonry/masonry.min.js"></script>
+<script src="plugins/clipboard/clipboard.min.js"></script>
+<script src="plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
